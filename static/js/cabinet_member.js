@@ -24,3 +24,15 @@ const getParliamentMemberId = (name) => {
             .catch((err) => reject(err));
     });
 };
+
+
+const getPhoto = (memberId) => {
+    return new Promise((resolve, reject) => {
+        fetch(getPhotoUrl(memberId))
+        .then((response) => response.json())
+        .then((data) => {
+            resolve(data.value);
+        })
+        .catch((err) => reject(err));
+    });
+};
