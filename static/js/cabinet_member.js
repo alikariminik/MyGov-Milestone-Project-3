@@ -25,7 +25,6 @@ const getParliamentMemberId = (name) => {
     });
 };
 
-
 const getPhoto = (memberId) => {
     return new Promise((resolve, reject) => {
         fetch(getPhotoUrl(memberId))
@@ -37,7 +36,6 @@ const getPhoto = (memberId) => {
     });
 };
 
-
 const getSynopsis = (memberId) => {
     return new Promise((resolve, reject) => {
         fetch(getSynopsisUrl(memberId))
@@ -45,6 +43,26 @@ const getSynopsis = (memberId) => {
         .then((data) => {
             console.log(data);
             resolve(data.value);
+        })
+        .catch((err) => reject(err));
+    });
+};
+
+const getVotes = (memberId) => {
+    return new Promise((resolve, reject) => {
+        fetch(getVotingUrl(memberId))
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            console.log(data.items.slice(0, 5));
+            votingResults = data.items.slice(0, 5);
+
+            resolve(votingResults.map(results => ({
+                inAffirmativeLobby: results.value.inAffirmativeLobby,
+                numberAgainst: results.value.numberAgainst,
+                numberInFavour: results.value.numberInFavour,
+                title: results.value.title,
+                })));
         })
         .catch((err) => reject(err));
     });
