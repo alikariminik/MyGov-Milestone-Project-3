@@ -12,6 +12,15 @@ const getPhotoUrl = (memberId) =>
 
 const HREF = `https://members.parliament.uk`
 
+function fixLink() {
+    targetDiv = document.querySelector("#synopsis");
+    targetDivATag = targetDiv.children[2];
+    anchorTagLink = targetDivATag.getAttribute("href");
+    fullLink = HREF + anchorTagLink;
+    constituencyLink = targetDivATag.setAttribute("href", fullLink);
+    constituencyLink = targetDivATag.setAttribute('target', '_blank');
+}
+
 const getParliamentMemberId = (name) => {
     return new Promise((resolve, reject) => {
         fetch(getMemberUrl(name))
