@@ -102,3 +102,12 @@ function parliamentAPI(name) {
             console.error(err);
         })
   };
+
+var pathArray = window.location.pathname.split("/");
+var name = pathArray[pathArray.length-1];
+if (name == "David%20T%20C%20Davies") {
+    name= "David%20T%20C"
+    parliamentAPI(name);
+  } else {
+    parliamentAPI(name);
+  };
