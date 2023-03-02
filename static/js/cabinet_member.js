@@ -67,3 +67,38 @@ const getVotes = (memberId) => {
         .catch((err) => reject(err));
     });
 };
+
+const covertInAffirmativeLobby = (inAffirmativeLobby) =>
+inAffirmativeLobby ? "Aye": "No";
+
+function parliamentAPI(name) {
+
+    getParliamentMemberId(name)
+        .then((memberId) => {
+            getSynopsis(memberId).then(synopsis => {
+                synopsisElement = document.getElementById("synopsis");
+                synopsisElement.innerHTML = `<h5>Profile</h5><br>${synopsis}`
+                fixLink();
+            });
+            getVotes(memberId).then(votes => {
+                console.log(votes)
+                votes.forEach(function(vote) {
+                    var li = document.createElement("li");
+                    var text = document.createTextNode(
+                    `${vote.title}:
+                    ${covertInAffirmativeLobby(vote.inAffirmativeLobby)}
+                    (For: ${vote.numberInFavour} vs Against:
+                    ${vote.numberAgainst}) `);
+                    li.appendChild(text);
+                    document.getElementById("votes").appendChild(li);
+                  });
+            });
+            getPhoto(memberId).then(photo => {
+                photoElement = document.getElementById("cabphoto");
+                photoElement.src = photo;
+            });
+        })
+        .catch((err) => {
+            console.error(err);
+        })
+  };
