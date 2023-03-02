@@ -100,6 +100,28 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Add Minister
+@app.route("/add_minister", methods=["GET", "POST"])
+def add_minister():
+    if request.method == "POST":
+        try:
+            new_minister = {
+                "first_name": request.form.get("first_name"),
+                "last_name": request.form.get("last_name"),
+                "role": request.form.get("role"),
+                "constituency": request.form.get("constituency"),
+                "profile_pic": request.form.get("profile_pic"),
+                "no": "21",
+            }
+            mongo.db.cabinet.insert_one(new_minister)
+            flash("Minister Successfully Added")
+        except ConnectionError:
+            raise Exception(
+                "There has been an error adding this minister")
+
+    return redirect(url_for("cabinet"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
