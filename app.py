@@ -162,6 +162,18 @@ def delete_minister(cab_id):
     return render_template("delete_minister.html", cab=cab)
 
 
+# Cabinet Member Profile Page
+@app.route("/cabinet/<cab_name>")
+def cabinet_member(cab_name):
+    try:
+        minister = mongo.db.cabinet.find()
+        return render_template(
+            "cabinet_member.html", name=cab_name, cabinet=cabinet)
+    except ConnectionError:
+        raise Exception(
+            'There has been an error connecting to the Mongo Database')
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
