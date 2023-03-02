@@ -122,6 +122,30 @@ def add_minister():
     return redirect(url_for("cabinet"))
 
 
+# Edit Minister
+@app.route("/edit_minister/<cab_id>", methods=["GET", "POST"])
+def edit_minister(cab_id):
+    if request.method == "POST":
+        try:
+            updated_details = {
+                "first_name": request.form.get("first_name"),
+                "last_name": request.form.get("last_name"),
+                "role": request.form.get("role"),
+                "constituency": request.form.get("constituency"),
+                "profile_pic": request.form.get("profile_pic"),
+            }
+            mongo.db.cabinet.update_one(
+                {"_id": ObjectId(cab_id)}, {"$set": updated_details})
+            flash("Minister Details Updated")
+            return redirect(url_for("cabinet"))
+        except ConnectionError:
+            raise Exception(
+                "There has been an error editing this minister's details")
+
+    cab = mongo.db.cabinet.find_one({"_id": ObjectId(cab_id)})
+    return render_template("edit_minister.html", cab=cab)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
