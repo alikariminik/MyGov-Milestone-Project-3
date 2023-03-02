@@ -18,10 +18,22 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# Home
 @app.route("/")
 @app.route("/home")
 def home():
     return render_template("home.html")
+
+
+# Cabinet page
+@app.route("/cabinet", methods=["GET", "POST"])
+def cabinet():
+    try:
+        cabinet = list(mongo.db.cabinet.find().sort("no"))
+        return render_template("cabinet.html", cabinet=cabinet)
+    except ConnectionError:
+        raise Exception(
+            'There has been an error connecting to the Mongo Database')
 
 
 if __name__ == "__main__":
