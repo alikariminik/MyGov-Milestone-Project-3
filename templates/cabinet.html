@@ -8,6 +8,25 @@
         constituency.</h5>
 </div>
 
+<!-- Modal Triggers for Add Cabinet members-->
+{% if session.user  %}
+<div class="row">
+    <div class="col s12 flex-box-buttons">
+        <a class="btn minister-form-buttons green darken-4" tabindex="1" onclick="$('#modal1').modal('open');">Add New Cabinet Minister <i class="fas fa-plus-square right"></i></a> 
+    </div>    
+</div>
+{% else %}
+<div class="row">
+    <div class="col-s12">
+        <p class="center-align" style="font-size: 16px">
+            In order to make updates to the cabinet, you need to <a href="{{ url_for('login') }}"
+                class="light-blue-text text-darken-4">Log In!</a>
+            <br>Not registered? <a href="{{ url_for('signup') }}" class="light-blue-text text-darken-4">Sign Up Now!</a>
+        </p>
+    </div>
+</div>
+{% endif %}
+
 <!-- Cabinet Members -->
 <div class="row">
     {% for cab in cabinet %}
