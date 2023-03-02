@@ -1,12 +1,19 @@
+/* Navbar */
 #logo{
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
- }
+   height: 100%;
+   overflow: hidden;
+   width: 100%;
+}
 
- body {
-    background-color: green; 
- }
+nav {
+   background-color: #062469;
+   color: white;
+   font-weight: 500;
+}
+
+body {
+   background-color: white; 
+}
 
  .center-image {
     overflow: hidden;
