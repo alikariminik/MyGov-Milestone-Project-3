@@ -36,3 +36,16 @@ const getPhoto = (memberId) => {
         .catch((err) => reject(err));
     });
 };
+
+
+const getSynopsis = (memberId) => {
+    return new Promise((resolve, reject) => {
+        fetch(getSynopsisUrl(memberId))
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            resolve(data.value);
+        })
+        .catch((err) => reject(err));
+    });
+};
