@@ -146,6 +146,22 @@ def edit_minister(cab_id):
     return render_template("edit_minister.html", cab=cab)
 
 
+# Delete Minister
+@app.route("/delete_minister/<cab_id>", methods=["GET", "POST"])
+def delete_minister(cab_id):
+    if request.method == "POST":
+        try:
+            mongo.db.cabinet.delete_one({"_id": ObjectId(cab_id)})
+            flash("Minister Deleted")
+            return redirect(url_for("cabinet"))
+        except ConnectionError:
+            raise Exception(
+                "There has been an error deleting  this minister")
+
+    cab = mongo.db.cabinet.find_one({"_id": ObjectId(cab_id)})
+    return render_template("delete_minister.html", cab=cab)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
