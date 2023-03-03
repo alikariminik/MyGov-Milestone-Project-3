@@ -46,12 +46,13 @@
     </header>
 
     <!-- flash messages -->
-    <div>
+    <div id="flash-message">
+        <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
                     <div class="row flashes">
-                        <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
+                        <p style="background-color: #062469; color: white; font-size: 24px ;" class="center-align">{{ message }}    <i class="fa-solid fa-x" id="flashx" onclick="removeFlash()"></i></p>
                     </div>
                 {% endfor %}
             {% endif %}
