@@ -44,7 +44,7 @@ def signup():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            flash("Username already exists")
+            flash("Username already exists", "")
             return redirect(url_for("signup"))
 
         register = {
@@ -74,7 +74,7 @@ def login():
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
-                flash("Success! You are logged in")
+                flash("Success! You are logged in!")
                 return redirect(url_for("home", username=session["user"]))
             else:
                 # invalid password match
@@ -93,7 +93,7 @@ def login():
 @app.route("/logout")
 def logout():
     # remove user from session cookie
-    flash("You have been logged out")
+    flash("You have been logged out.")
     session.pop("user")
     return redirect(url_for("login"))
 
@@ -112,7 +112,7 @@ def add_minister():
                 "no": "21",
             }
             mongo.db.cabinet.insert_one(new_minister)
-            flash("Minister Successfully Added")
+            flash("Minister Successfully Added!")
         except ConnectionError:
             raise Exception(
                 "There has been an error adding this minister")
@@ -134,7 +134,7 @@ def edit_minister(cab_id):
             }
             mongo.db.cabinet.update_one(
                 {"_id": ObjectId(cab_id)}, {"$set": updated_details})
-            flash("Minister Details Updated")
+            flash("Minister Details Updated!")
             return redirect(url_for("cabinet"))
         except ConnectionError:
             raise Exception(
@@ -150,7 +150,7 @@ def delete_minister(cab_id):
     if request.method == "POST":
         try:
             mongo.db.cabinet.delete_one({"_id": ObjectId(cab_id)})
-            flash("Minister Deleted")
+            flash("Minister Deleted!")
             return redirect(url_for("cabinet"))
         except ConnectionError:
             raise Exception(
