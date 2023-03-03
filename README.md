@@ -272,8 +272,19 @@ Vigorous testing was conducted throughout the development process to ensure that
 ### Known Bugs
 - No known bugs at this time.
 
-## Credits
+## Deployment 
+### Forking the GitHub Repository
 
+By forking the GitHub Repository you can make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository. This can be done by folling these steps below:
+
+1. Log in to GitHub and locate the [GitHub
+   Repository](https://github.com/alikariminik/MyGov-Milestone-Project-3)
+2. At the top of the Repository (not top of page) just above the "Settings"
+   Button on the menu, locate the "Fork" Button.
+3. Click the button (not the number to the right) and you should now have a copy
+   of the original repository in your GitHub account.
+
+## Credits
 #### Resources 
 - Code Institute course material
 - Code Institute Mentor
