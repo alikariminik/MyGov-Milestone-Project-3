@@ -284,6 +284,25 @@ By forking the GitHub Repository you can make a copy of the original repository 
 3. Click the button (not the number to the right) and you should now have a copy
    of the original repository in your GitHub account.
 
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/alikariminik/MyGov-Milestone-Project-3).
+2. Under the repository name, click "Code".
+3. To clone the repository using HTTPS, under "HTTPS", copy the link.
+4. Open your local terminal with git installed
+5. Change the current working directory to the location where you want the cloned directory to be created.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+    ```Terminal
+    ~$ git clone https://github.com/alikariminik/MyGov-Milestone-Project-3.git
+    ```
+
+7. Press Enter. Your local clone will be created.
+
+    ```Terminal
+    $ git clone https://github.com/alikariminik/MyGov-Milestone-Project-3.git
+    ```
+
 ## Credits
 #### Resources 
 - Code Institute course material
