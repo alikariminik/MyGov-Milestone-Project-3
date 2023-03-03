@@ -12,7 +12,7 @@
 {% if session.user  %}
 <div class="row">
     <div class="col s12 flex-box-buttons">
-        <a class="btn minister-form-buttons green darken-4" tabindex="1" onclick="$('#modal1').modal('open');">Add New Cabinet Minister <i class="fas fa-plus-square right"></i></a> 
+        <a class="btn minister-form-buttons green darken-4" id="addMember"tabindex="1" onclick="$('#modal1').modal('open');">Add New Cabinet Minister <i class="fas fa-plus-square right"></i></a> 
     </div>    
 </div>
 {% else %}
@@ -109,9 +109,9 @@
                     <!----------- Submit and Cancel Buttons ------------>
                     <div class="row">
                         <div class="col s12 center-align flex-box-buttons">
-                            <a onclick="$('#modal1').modal('close');" class="btn-large red darken-1 text-shadow minister-form-buttons">
+                            <button onclick="$('#modal1').modal('close');" class="btn-large red darken-1 text-shadow minister-form-buttons">
                                 Cancel <i class="fas fa-plus-cancel right"></i>
-                            </a>
+                            </button>
                             <button  type="submit" class="btn-large green darken-1 text-shadow minister-form-buttons">
                                 Add Minister <i class="fas fa-plus-square right"></i>
                             </button>

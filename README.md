@@ -39,22 +39,22 @@ Features Planned
 
 ### The Structure Plane
 User Story:
-> As a user, I want to be able to view who the current members of the cabinet are.
+> As a user, I want to be able to view who the current members of the cabinet are, see a photo of them and know what positions they hold and also what constituency they represent.
 
 Acceptance Criteria:
-* The user should be able to quickly find who the current cabinet members are with just a few clicks.
-
-Implementation:
-* The website will contain a navbar on every page and for all screen-sizes allowing for navigation to the Cabinet page and other pages of the site.
-
-User Story:
-> As a user, I want to be able to view the cabinet members details, see a photo of them and know what positions they hold and also what constituency they represent.
-
-Acceptance Criteria:
-* Information on the Cabinet Members should be presented in a clear and legible way and localised to one area of the page
+* The user should be able to quickly find who the current cabinet members and view their details all in one place with just a few clicks.
 
 Implementation:
 * A profile card containing the cabinet member's name, image, position and constituency. 
+
+User Story:
+> As a user, I want to be find out more details such as a biography and recent voting records for a particular cabinet member.
+
+Acceptance Criteria:
+* Users should be able to click on a Cabinet Member to view further details about them.
+
+Implementation:
+* Use of Parliament API to obtain this up-to-date information for each cabinet member. 
 
 User Story:
 > As a user, I want to be able to create an account so that I can help keep the database up to date, should there be any future changes to the cabinet.
@@ -166,7 +166,69 @@ Further to this, I would have liked to expand the Cabinet_member.html page to ob
   - no : Integer
 
 ## Testing 
+### User Story Testing 
+> User Story: 
+"As a user, I want to be able to view who the current members of the cabinet are, see a photo of them and know what positions they hold and also what constituency they represent"
 
+> Expected: 
+Users should be able to view all cabinet members when on the /cabinet page, which can be accessed via the Navbar when "Cabinet" is clicked. Users should be able to view all cabinet members on this page on all screen sizes and their details should be legible. The information on the cabinet members should be legible.
+
+> Testing:
+I clicked on Cabinet in the Navbar and was directed to the Cabinet page. Through the use of the browser Developer tooks I was able to test how this page and the cabinet profile cards rendered on a variety of different screen sizes.  
+
+> Result - Success:
+Having tested this page on a variety of different screen sizes, I found that cabinet profile cards, and all of the information in them, rendered neatly and legibly. On large screens, 4 Cabinet members fit on one line and this reduces as the screen size does until on small screens 1 cabinet member fits to one line.
+
+> Fix:
+N/A. 
+
+> User Story:
+"As a user, I want to be find out more details such as a biography and recent voting records for a particular cabinet member"
+
+> Expected: 
+Users should be able to select on a Cabinet Members photo in order to open their respecitve details page which will make a request to the Parliament API and then display the results in the page.
+
+> Testing:
+I tested each and every cabinet member by clicking on the Cabinet Members photo and opening their details page and observed the results with the Console open in order to check whether there were any errors with the API request.
+
+> Result - Success:
+The API request succeeded with displaying the requested information for every cabinet member and there were no errors in the console.
+
+> Fix:
+N/A. 
+
+> User Story:
+"As a user, I want to be able to create an account so that I can help keep the database up to date, should there be any future changes to the cabinet"
+
+> Expected:
+Users should be able to Create an account, log out of it and log back in and additionally access CRUD functionality in the way of Adding Cabinet Members, Editing exisiting Cabinet Members and Deleting Cabinet Members. 
+
+> Testing: 
+I clicked on "Sign Up" in the navbar to navigate to the sign up page. I created an account by entering a username I had not previously used and then tried to set a password of "123" checking to see if validation was working for the password field. I would then enter a valid password and create an account and check to see if I was redirected to the Home screen and that the "You are already logged in!" message was displaying under the "Want to help?" section. I would then navigate to the Cabinet Page and test out the CRUD functionality by creating a "Test" cabinet member by way of the Add Cabinet Member button which should be now viewable to me if I am logged in. After filling out the Add Cabinet Member form, I should see the new cabinet member created at the bottom of the list of cabinet members. I would look to edit their Constituency and Role within the cabinet by using the Edit Cabinet Form and then submitting it. I would then check to see if the updates have been reflected on the cabinet page and if they were, I would then proceed with Deleting the Test Cabinet Member by using the Delete button and confirming the deletion. On deletion, I would then log out of my account and then log back to ensure that log in and log out feature was working as intended.
+
+> Result - Success:
+All steps in the testing outlined above for this user story were successfully carried out with no issues.
+
+> Fix:
+N/A. 
+
+> User Story:
+"As a user, I want to be able to use this site with only my keyboard"
+
+> Expected:
+Users should be able to carry out all of the above User Stories through the use of only a Keyboard.
+
+> Testing: 
+I carried out the exact same tests as with the above User Stories but by only using Keyboard commands.
+
+> Result - Failure:
+1. The Add Cabinet Member Button would not respond on "Enter" keydown. 
+2. The Cancel option on the Add Cabinet Member Form would not respond on "Enter" keydown.
+
+> Fix:
+1. Added JavaScript to allow for this button to work when "Enter" is pressed.
+2. Changed Cancel from anchor tag to a button. 
+Following these fixes, and a repeat of tests, it was confirmed that the site was fully functional for keyboard-only users.
 
 
 ### Validator Testing
