@@ -242,7 +242,7 @@ Having tested all of the user stories myself, I devised a step-by-step guide whi
 8. Click on "Cabinet". Check to see if the Edit and Delete Icons appear correctly. 
 9. Add in a new Cabinet Member. Enter the form details and ensure that each input field meets their requirements and that no field can be left unpopulated other than Profile Picture (URL). After submitting the form, check that the new cabinet member shows at the bottom of the screen. 
 10. Edit the details of the new Cabinet Member. Ensure that the updated details are reflected in the new Cabinet Members details. 
-11. Delete the newly added in Cabinet Member. 
+11. Delete the newly added Cabinet Member. 
 12. Click on Rishi Sunak's Portrait to access his Cabinet_Member page. Check that the details from the API load onto the site correctly and that button to navigate back to the cabinet page works.
 13. Click on the other Cabinet Members to check this works too.
 14. Sign out. 
@@ -302,6 +302,23 @@ By forking the GitHub Repository you can make a copy of the original repository 
     ```Terminal
     $ git clone https://github.com/alikariminik/MyGov-Milestone-Project-3.git
     ```
+
+### Deploying with Heroku
+* The site was deployed to Heroku and automatic updates to the code were done through enabling automatic deploys from GitHub. The steps to deploy the site are as follows:
+1. Log in to [Heroku](https://www.heroku.com/) and  navigate to your personal app dashboard.
+2. At the top of the page locate the 'New' drop down, click it and then select 'Create new app'.
+3. Give your application a unique name, select the nearest region to your location and click the 'Create app' button.
+4. From the menu towards the top of the page select the 'Settings' section and click on 'Reveal Config Vars' in the Config vars section. Add in the Key:Value pairings for environment variables that are required for this app:
+- `IP` = 0.0.0.0
+- `PORT` = 5000
+- `MONGO_DBNAME` = [Mongo DataBase Name]
+- `MONGO_URI` = [Mongo DataBase URI]
+- `SECRET_KEY` = [Secret Key]
+
+5. Click on the Deploy tab and then under Deployment method, select GitHub.
+6. Search and select the MyGov-Milestone-Project-3 repository.
+7. Select Enable Automatic Deploys
+8. Select Master Branch and then Click on Deploy Branch.
 
 ## Credits
 #### Resources 
