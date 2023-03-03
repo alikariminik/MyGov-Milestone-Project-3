@@ -222,6 +222,9 @@ body {
 }
 
 /******* Login Page & Sign Up Pages **********/
+.login-signup-bg-container{
+   height: 1300px;
+}
 
 #loginbg {
    background-image: url("../images/bhop.jpg");
@@ -229,7 +232,7 @@ body {
    opacity: 0.95;
    overflow: hidden;
    background-position: center;
-   max-height: 1300px;
+   height: 100%;
    width: 100%;
 }
 
