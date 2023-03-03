@@ -139,3 +139,25 @@ body {
    background-color: whitesmoke;
    color: #C8102E;
 }
+
+ /* Add & Edit Mode */
+
+ .form-style{
+   background-color:whitesmoke;
+   z-index: 1;
+   font-family: 'Catamaran', sans-serif;
+ }
+
+ .delete-form-style{
+   background-color: rgb(200, 16, 46,0.1);
+   font-weight: 700;
+ }
+
+ .minister-form-buttons:hover, .minister-form-buttons:focus{
+   transform: scale(1.15);
+ }
+
+ .mymodal{
+   max-height: 73% !important;
+   height: 60% !important;
+ }
