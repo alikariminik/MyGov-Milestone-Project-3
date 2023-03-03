@@ -145,3 +145,23 @@ I had further ideas for additional features for this application but, due to tim
 I would have liked to have expanded the database to include additional cabinet attendees who are not deemed as Cabinet Ministers. Additionally, I would have liked to have added a filter option so that the user can show only a list of Cabinet members by a given condition - e.g. Age over 40, Ministers by Department, Gender etc.  
 
 Further to this, I would have liked to expand the Cabinet_member.html page to obtain more details on the Cabinet Members from the API Calls. 
+
+### Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Frameworks, Libraries & Programs Used
+
+-   [Materialize 1.0.0](https://materializecss.com/)
+    - Materialize was used to assist with the responsiveness, styling and JavaScript components on the website
+-   [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Catamaran', 'Poppins' & 'Lora' - further details in Design > Typography section of this file.
+-   [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome icons were used across the pages which acted as buttons to aid navigation for the user. The Font Awesome Icons themselves were also added for aesthetic and UX purposes.
+-   [Flask:](https://flask.palletsprojects.com/en/2.2.x/)
+    - The Flask framework was used to build this application and allowed for seamless templating and navigation across the apps various pages.
+-   [MongoDB:](https://www.mongodb.com/)
+    - The Non-Relational Database was hosted on MongoDB and its data is obtained through the use of PyMongo.
