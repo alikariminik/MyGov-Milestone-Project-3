@@ -22,8 +22,7 @@ body {
    padding: 0 20px 0 20px;
 }
 
-/****************** Home Image  *************/
-
+/****************** Home Page  *************/
 /* Hero Image  */
 .hero-image-outer{
   height: 350px;
@@ -38,7 +37,28 @@ body {
   position: relative;
 }
 
-  /* Cabinet Member Profile Card and Picture */
+/**Intro **/
+.intro-text{
+   font-size: 20px;
+   font-family: 'lora', sans-serif;
+
+}
+
+.logged-in-box{
+   background-color: green;
+   color: whitesmoke;
+   border-color: black;
+   border-style: groove;
+}
+
+.signup-button:hover, .signup-button:focus {
+   background-color: whitesmoke !important;
+   color: green;
+}
+
+
+/*********** Cabinet **********/
+/* Cabinet Member Profile Card and Picture */
 .cabinet-title{
    font-family: 'Times New Roman', Times, sans-serif;
 }
