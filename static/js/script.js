@@ -10,11 +10,8 @@ window.onload = function () {
 
 var addMember = document.getElementById("addMember");
 
-// Execute a function when the user presses a key on the keyboard
 addMember.addEventListener("keypress", function(event) {
-  // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter") {
-    // Trigger the button element with a click
     document.getElementById("addMember").click();
   }
 });
@@ -22,4 +19,4 @@ addMember.addEventListener("keypress", function(event) {
 function removeFlash() {
   const element = document.getElementById("flash-message");
   element.remove();
-};
+}

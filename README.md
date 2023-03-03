@@ -11,7 +11,7 @@ This is the ReadMe for the website My Government UK. My Government UK is a websi
 ## UX
 
 ### The Strategy Plane
-* My inspiration for deciding to build this website came from the recent events in UK Politics. Since September 2022, the UK has had 3 different Prime Ministers (PMs) and with each change-over there have been dozens of sackings, re-appointments and new appointments of Cabinet Ministers - the team of the most senior ministers in the Government who are chosen by the Prime Minister to lead on specific policy areas such as Health, Transport, Foreign Affairs or Defence. With the vast number of changes in Government, I wanted to build a website where users can easily view who are currently the members of the cabinet who would be devising government policy on the most important areas that affects everyone's lives in the UK. Through increased awareness of who these individuals are, I aim to improve the accountability of those individuals and the overall government's outcome on the policies they have lead on.
+* My inspiration for deciding to build this website came from the recent events in UK Politics. Since September 2022, the UK has had 3 different Prime Ministers (PMs) and with each change-over there have been dozens of sackings, re-appointments and new appointments of Cabinet Ministers - the team of the most senior ministers in the Government who are chosen by the Prime Minister to lead on specific policy areas such as Health, Transport, Foreign Affairs or Defence. With the vast number of changes in Government, I wanted to build a website where users can easily view who are currently the members of the cabinet who would be devising government policy on the most important areas that affects everyone's lives in the UK. Through increased awareness of who these individuals are, I aim to improve the accountability of those individuals and the overall government's outcome on the policies they have led on.
 
 
 #### Site Goals
@@ -48,7 +48,7 @@ Implementation:
 * A profile card containing the cabinet member's name, image, position and constituency. 
 
 User Story:
-> As a user, I want to be find out more details such as a biography and recent voting records for a particular cabinet member.
+> As a user, I want to be able to find out more details such as a biography and recent voting records for a particular cabinet member.
 
 Acceptance Criteria:
 * Users should be able to click on a Cabinet Member to view further details about them.
@@ -60,7 +60,7 @@ User Story:
 > As a user, I want to be able to create an account so that I can help keep the database up to date, should there be any future changes to the cabinet.
 
 Acceptance Criteria:
-* Users should have the ability to create accounts and when logged in be able to make  make changes to the database.
+* Users should have the ability to create accounts and when logged in be able to make changes to the database.
 
 Implementation:
 * It should be possible for a user to create an account which have some form of password controls like minimum lengths. Upon creating an account or logging in, the website should uncover additional functions to allow for CRUD functionality.
@@ -96,21 +96,21 @@ Desktop Device Wireframes
 
 #### Design 
 ##### Colour Scheme
-The colour scheme I opted to use represent the colours of the union jack. The Hex codes for the 3 colour flag were: White: #FFFFFF.Red: #C8102E.Blue: #062469. There is some variation across the pages to reduce the opacity to improve readability. 
+The colour scheme I opted to use represent the colours of the union jack. The Hex codes for the 3-colour flag were: White: #FFFFFF.Red: #C8102E.Blue: #062469. There is some variation across the pages to reduce the opacity to improve readability. 
 
 ##### Typography
-I used the  'Times New Roman', font for title 'The Cabinet' with 'Times & sans-serif;' as the fallback font in case for any reason the font isn't being imported into the site correctly. I found 'Times New Roman' gave this page title a historical feeling which is meant to covey the ancientness of The UK Cabinet which was first formed 1644.
+I used the 'Times New Roman', font for title 'The Cabinet' with 'Times & sans-serif;' as the fallback font in case for any reason the font isn't being imported into the site correctly. I found 'Times New Roman' gave this page title a historical feeling which is meant to convey the ancientness of The UK Cabinet which was first formed 1644.
 
 I used the font 'Poppins', with 'sans-serif' as the fallback, for the Cabinet Members role title and also on the cabinet members profile card as I thought this font had a strong and important look relative to the other fonts used. The information characterised within this font are considered to be the key information on the cabinet members i.e. their role, bio, and recent voting records. 'Poppins' was obtained from Google Fonts.
 
-I used the font 'Catamaran', with 'sans-serif' as the fallback, for the Cabinet Members' Name as when trialling different fonts between the Role Title ('Poppins') and Constituency ('Lora') this font looked neat and clear. I also used for the titles and text on the forms as it again gave a clear and tidy visual. On the Delete_Minister Form, the weight is increased in conjunction with the different coloured background to warn the user that this is the delete form to avoid accidental deletions of data. 'Catamaran' was obtained from Google Fonts.
+I used the font 'Catamaran', with 'sans-serif' as the fallback, for the Cabinet Members' Name as when trialling different fonts between the Role Title ('Poppins') and Constituency ('Lora') this font looked neat and clear. I also used for the titles and text on the forms as it again gave a clear and tidy visual. On the Delete Minister Form, the weight is increased in conjunction with the different coloured background to warn the user that this is the delete form to avoid accidental deletions of data. 'Catamaran' was obtained from Google Fonts.
 
-I used the font 'lora', with 'sans-serif' as the fallback, for the cabinet members constituency as I felt this gave a softer and less prominent look than the fonts for their name and role. This is intentional as the constituency took less precedence over the cabinet position.  'Lora' was obtained from Google Fonts.
+I used the font 'lora', with 'sans-serif' as the fallback, for the cabinet members constituency as I felt this gave a softer and less prominent look than the fonts for their name and role. This is intentional as the constituency took less precedence over the cabinet position. 'Lora' was obtained from Google Fonts.
 
 [Google Fonts](https://fonts.google.com/)
 
 ##### Imagery
-The use of images are a key display feature of this website. I have used the MPs' official portrait photos that are freely accessible on [Parliament.UK](https://members.parliament.uk/member) in a 3x4 ratio. I had the issue of Rishi Sunak and Penny Mordaunt not having their official portrait available at this time on Parliament.UK so I used another portrait image for them which had a creative commons license.
+The use of images is a key display feature of this website. I have used the MPs' official portrait photos that are freely accessible on [Parliament.UK](https://members.parliament.uk/member) in a 3x4 ratio. I had the issue of Rishi Sunak and Penny Mordaunt not having their official portrait available at this time on Parliament.UK so I used another portrait image for them which had a creative commons license.
 
 For the Log In page, I have used a beautiful image of the Houses of Parliament at night with the River Thames in the foreground. This and 10 Downing Street are perhaps the most recognisable buildings in UK Politics so I felt it was fitting that it should be used here. I felt that this image compliments the dark colours used in the navbar and log of the website and overall creates a pretty looking log in page.
 
@@ -174,7 +174,7 @@ Further to this, I would have liked to expand the Cabinet_member.html page to ob
 Users should be able to view all cabinet members when on the /cabinet page, which can be accessed via the Navbar when "Cabinet" is clicked. Users should be able to view all cabinet members on this page on all screen sizes and their details should be legible. The information on the cabinet members should be legible.
 
 > Testing:
-I clicked on Cabinet in the Navbar and was directed to the Cabinet page. Through the use of the browser Developer tooks I was able to test how this page and the cabinet profile cards rendered on a variety of different screen sizes.  
+I clicked on Cabinet in the Navbar and was directed to the Cabinet page. Through the use of the browser Developer tools I was able to test how this page and the cabinet profile cards rendered on a variety of different screen sizes.  
 
 > Result - Success:
 Having tested this page on a variety of different screen sizes, I found that cabinet profile cards, and all of the information in them, rendered neatly and legibly. On large screens, 4 Cabinet members fit on one line and this reduces as the screen size does until on small screens 1 cabinet member fits to one line.
@@ -183,10 +183,10 @@ Having tested this page on a variety of different screen sizes, I found that cab
 N/A. 
 
 > User Story:
-"As a user, I want to be find out more details such as a biography and recent voting records for a particular cabinet member"
+"As a user, I want to be able to find out more details such as a biography and recent voting records for a particular cabinet member"
 
 > Expected: 
-Users should be able to select on a Cabinet Members photo in order to open their respecitve details page which will make a request to the Parliament API and then display the results in the page.
+Users should be able to select on a Cabinet Members photo in order to open their respective details page which will make a request to the Parliament API and then display the results in the page.
 
 > Testing:
 I tested each and every cabinet member by clicking on the Cabinet Members photo and opening their details page and observed the results with the Console open in order to check whether there were any errors with the API request.
@@ -201,7 +201,7 @@ N/A.
 "As a user, I want to be able to create an account so that I can help keep the database up to date, should there be any future changes to the cabinet"
 
 > Expected:
-Users should be able to Create an account, log out of it and log back in and additionally access CRUD functionality in the way of Adding Cabinet Members, Editing exisiting Cabinet Members and Deleting Cabinet Members. 
+Users should be able to Create an account, log out of it and log back in and additionally access CRUD functionality in the way of Adding Cabinet Members, Editing existing Cabinet Members and Deleting Cabinet Members. 
 
 > Testing: 
 I clicked on "Sign Up" in the navbar to navigate to the sign up page. I created an account by entering a username I had not previously used and then tried to set a password of "123" checking to see if validation was working for the password field. I would then enter a valid password and create an account and check to see if I was redirected to the Home screen and that the "You are already logged in!" message was displaying under the "Want to help?" section. I would then navigate to the Cabinet Page and test out the CRUD functionality by creating a "Test" cabinet member by way of the Add Cabinet Member button which should be now viewable to me if I am logged in. After filling out the Add Cabinet Member form, I should see the new cabinet member created at the bottom of the list of cabinet members. I would look to edit their Constituency and Role within the cabinet by using the Edit Cabinet Form and then submitting it. I would then check to see if the updates have been reflected on the cabinet page and if they were, I would then proceed with Deleting the Test Cabinet Member by using the Delete button and confirming the deletion. On deletion, I would then log out of my account and then log back to ensure that log in and log out feature was working as intended.
@@ -231,7 +231,7 @@ I carried out the exact same tests as with the above User Stories but by only us
 Following these fixes, and a repeat of tests, it was confirmed that the site was fully functional for keyboard-only users.
 
 ### Site Testing by a 3rd Party 
-Having tested all of the user stories myself, I devised a step-by-step guide which captures what any user to the site may try to achieve when visiting the site and instructed my partner to follw them and and provide me feedback on her results. The steps were as follows:
+Having tested all of the user stories myself, I devised a step-by-step guide which captures what any user to the site may try to achieve when visiting the site and instructed my partner to follow them and provide me feedback on her results. The steps were as follows:
 1. Open the website - *check to see if all of the contents load successfully - this will be done on every subsequent page opened
 2. Click on the "Sign Up!" button.
 3. Create a new account and attempt to create one which does not meet the password minimum character requirements. Ensure log in directs back to the Home Page.
@@ -263,7 +263,7 @@ Having followed these steps, my partner confirmed that she had no issues with ca
         * No major issues in JS files.
 * Python
     *   [Python Validator] Pycodestyle in GitPod 
-        * No issues issues in python files.
+        * No issues in python files.
 
 
 ### Responsiveness
@@ -275,7 +275,7 @@ Vigorous testing was conducted throughout the development process to ensure that
 ## Deployment 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository you can make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository. This can be done by folling these steps below:
+By forking the GitHub Repository you can make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository. This can be done by following these steps below:
 
 1. Log in to GitHub and locate the [GitHub
    Repository](https://github.com/alikariminik/MyGov-Milestone-Project-3)
