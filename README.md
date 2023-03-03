@@ -230,6 +230,26 @@ I carried out the exact same tests as with the above User Stories but by only us
 2. Changed Cancel from anchor tag to a button. 
 Following these fixes, and a repeat of tests, it was confirmed that the site was fully functional for keyboard-only users.
 
+### Site Testing by a 3rd Party 
+Having tested all of the user stories myself, I devised a step-by-step guide which captures what any user to the site may try to achieve when visiting the site and instructed my partner to follw them and and provide me feedback on her results. The steps were as follows:
+1. Open the website - *check to see if all of the contents load successfully - this will be done on every subsequent page opened
+2. Click on the "Sign Up!" button.
+3. Create a new account and attempt to create one which does not meet the password minimum character requirements. Ensure log in directs back to the Home Page.
+4. Check that the "You are already logged in!" flash message shows where the "Sign Up" and "Log In" buttons originally were. Click "Log Out". Check that the Log Out Flash Message shows and that this can be closed by clicking on the X icon.
+5. Try to Sign up a new account using the same account name as the already created one to ensure that this does not accept a new account creation.
+6. Click on the "Log In" page. Try logging in with incorrect account and password details to ensure this fails. Try again with correct Account Name and incorrect password. Ensure the same flash message appears so that it is not distinguishable whether the password or account name was wrong.
+7. Log In correctly.
+8. Click on "Cabinet". Check to see if the Edit and Delete Icons appear correctly. 
+9. Add in a new Cabinet Member. Enter the form details and ensure that each input field meets their requirements and that no field can be left unpopulated other than Profile Picture (URL). After submitting the form, check that the new cabinet member shows at the bottom of the screen. 
+10. Edit the details of the new Cabinet Member. Ensure that the updated details are reflected in the new Cabinet Members details. 
+11. Delete the newly added in Cabinet Member. 
+12. Click on Rishi Sunak's Portrait to access his Cabinet_Member page. Check that the details from the API load onto the site correctly and that button to navigate back to the cabinet page works.
+13. Click on the other Cabinet Members to check this works too.
+14. Sign out. 
+15. Check the Add Button and Edit & Icons appear and that the text instructing users to log in / sign up are shown at the top of the Cabinet page under the title The Cabinet. 
+16. Repeat using only a Keyboard.
+
+Having followed these steps, my partner confirmed that she had no issues with carrying this out.
 
 ### Validator Testing
 * HTML
