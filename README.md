@@ -183,10 +183,27 @@ Further to this, I would have liked to expand the Cabinet_member.html page to ob
     *   [Python Validator] Pycodestyle in GitPod 
         * No issues issues in python files.
 
+
 ### Responsiveness
-
 Vigorous testing was conducted throughout the development process to ensure that the site maintained responsiveness as more elements were added on. Using developer tools and adjusting screen dimensions, I have checked to ensure that all content displays clearly over a variety of screen sizes - primarily on the Mobile, Tablet and Monitors. As mentioned above, media queries were added to correct responsiveness failings from Materialize. 
-
 
 ### Known Bugs
 - No known bugs at this time.
+
+## Credits
+
+#### Resources 
+- Code Institute course material
+- Code Institute Mentor
+- [CodeInstitute-ReadME](https://github.com/Code-Institute-Solutions/SampleREADME)
+
+#### Code
+- In the app.py file, the code for Login, Registration and Log Out have been adapted for use from the CodeInstitute lessons which provide a walkthrough on how to create an account with the aid of Werkzeug. This is mentioned in the comments on this file on Lines 34, 60 & 89.
+
+#### Media 
+- [HeroImage:PrimeMinisterLizTrussResigns] https://www.flickr.com/photos/number10gov/52441645784/in/faves-196955694@N02/ Number 10 Flickr account
+- [LogIn-Background] https://www.flickr.com/photos/97044050@N00/2706292588/ Maurice Flickr
+- [SignUp-Background:LarrytheCatsitsunderUkraineFlowerArch] https://www.flickr.com/photos/number10gov/52308010218/in/photolist-2k3f4ae-2kAdvtn-2ifDpAY-MRHP1y-buuiMp-2nGbpXN-aVp57B-2nG4ZdS-pj2tNH-bgYUGT-2ihBerq-2kjHYFF-2qQgHL-2vQBzS-2nGhe49-2kjJvrK-2kjJvvx-2vHcXK-2ihAbcA-2keYMyc-2j4jdz-2ehhMp5-RBRbaB-bwDNEF-2mLwkdY-6bJP4R-wvdMjv-2jGShph-2dZkEuR-2fiAhrJ-2ehhMGQ-2ehhMyd-2ehhMuf-RBRb3T-2dZm37t-a21xic-2foejET-24LFpbn-Tf1Nfw-RBRb2R-RBRaZX-2ehh8SG-2ejA9UU-Tf2bi9-2foetba-2dZm38F-2jkSxhi-2jGRrTZ-2jGRsL5-8WMfFE Number 10 Flickr account
+- [RishiSunakPortrait:OfficialportraitofRishiSunak] https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Official_portrait_of_Rishi_Sunak_crop_2.jpg/360px-Official_portrait_of_Rishi_Sunak_crop_2.jpg Chris McAndrew 
+- [PennyMordauntPortrait:OfficialportraitofPennyMordaunt] Chris McAndrew 
+- All other Cabinet Member Portraits were obtained from https://members.parliament.uk/members/Commons
