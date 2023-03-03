@@ -10,7 +10,7 @@ const getMemberUrl = (name) =>
 const getPhotoUrl = (memberId) =>
     `https://members-api.parliament.uk/api/Members/${memberId}/ThumbnailUrl`;
 
-const HREF = `https://members.parliament.uk`
+const HREF = `https://members.parliament.uk`;
 
 function fixLink() {
     targetDiv = document.querySelector("#synopsis");
@@ -89,11 +89,11 @@ function parliamentAPI(name) {
         .then((memberId) => {
             getSynopsis(memberId).then(synopsis => {
                 synopsisElement = document.getElementById("synopsis");
-                synopsisElement.innerHTML = `<h5>Profile</h5><br>${synopsis}`
+                synopsisElement.innerHTML = `<h5>Profile</h5><br>${synopsis}`;
                 fixLink();
             });
             getVotes(memberId).then(votes => {
-                console.log(votes)
+                console.log(votes);
                 votes.forEach(function (vote) {
                     var li = document.createElement("li");
                     var text = document.createTextNode(
@@ -112,15 +112,15 @@ function parliamentAPI(name) {
         })
         .catch((err) => {
             console.error(err);
-        })
-};
+        });
+}
 
 
 var pathArray = window.location.pathname.split("/");
 var name = pathArray[pathArray.length - 1];
 if (name == "David%20T%20C%20Davies") {
-    name = "David%20T%20C"
+    name = "David%20T%20C";
     parliamentAPI(name);
 } else {
     parliamentAPI(name);
-};
+}
