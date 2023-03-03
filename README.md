@@ -27,3 +27,12 @@ This is the ReadMe for the website My Government UK. My Government UK is a websi
 * As a user, I want to be able to create an account so that I can help keep the database up to date, should there be any future changes to the cabinet.
 * As a user I want to be able to use this site with my keyboard
 * As a user I want to be able to use a screen reader to help use this site.
+
+### The Scope Plane
+Features Planned
+* A page which displays all of the cabinet members on one page with their details and an accompanying photograph.
+* Responsive Design allowing the user to correctly operate the site across a range of devices the user could potentially use such as Desktop, Laptop, Tablet and Mobile's.
+* An account creation system which meets standard password and account protections such as minimum characters length.
+* Be able to Create, Read, Update and Delete data on the database through the website and have these changes reflect instantly on the website (CRUD Functionality)
+* The site should be fully accessible for keyboard users
+* The site should be fully accessible for screen reader users
