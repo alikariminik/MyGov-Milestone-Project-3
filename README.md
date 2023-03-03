@@ -164,3 +164,21 @@ Further to this, I would have liked to expand the Cabinet_member.html page to ob
   - constituency: String
   - profile_pic: String
   - no : Integer
+
+## Testing 
+
+
+
+### Validator Testing
+* HTML
+    *   [W3C Validator](https://validator.w3.org/nu/)
+        * No major issues in HTML files.
+* CSS
+    *   [Jigsaw Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+        * No issues in CSS files.
+* JavaScript
+    *   [JSlint Validator](https://www.jslint.com/)
+        * No major issues in JS files.
+* Python
+    *   [Python Validator] Pycodestyle in GitPod 
+        * No issues issues in python files.
