@@ -30,7 +30,7 @@
 <!-- Cabinet Members -->
 <div class="row">
     {% for cab in cabinet %}
-    <div class="col s12 m5 l4 " id="adjust">
+    <div class="col s12 m5 l4 adjust">
         <div class="profile-box">
             <div class="image-container">
                 <a href="{{ url_for('cabinet_member', cab_name=cab.first_name+' '+cab.last_name) }}">
@@ -45,13 +45,14 @@
             <div class="center-align">
                 {% if session.user  %}
                 <a class="btn edit-icon" href="{{ url_for('edit_minister', cab_id=cab._id) }}"><i
-                        class="fa-solid fa-pen-to-square "></i></a>
+                        class="fa-solid fa-pen-to-square "></i>
+                </a>
                 <a class="btn delete-icon" href="{{ url_for('delete_minister', cab_id=cab._id) }}"><i
-                        class="fa-solid fa-trash "></i></a>
+                        class="fa-solid fa-trash "></i>
+                </a>
                 {% endif %}
             </div>
         </div>
-        </a>
     </div>
     {% endfor %}
 </div>

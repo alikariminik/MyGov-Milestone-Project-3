@@ -345,20 +345,20 @@ body {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 815px) {
-   #adjust {
+   .adjust {
       width: 100% !important;
    }
 }
 
 @media only screen and (min-width: 816px) and (max-width: 1240px) {
-   #adjust {
+   .adjust {
       width: 50% !important;
       height: 100%;
    }
 }
 
 @media only screen and (min-width: 1540px) {
-   #adjust {
+   .adjust {
       width: 25% !important;
    }
 }
