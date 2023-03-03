@@ -36,3 +36,54 @@ Features Planned
 * Be able to Create, Read, Update and Delete data on the database through the website and have these changes reflect instantly on the website (CRUD Functionality)
 * The site should be fully accessible for keyboard users
 * The site should be fully accessible for screen reader users
+
+### The Structure Plane
+User Story:
+
+> As a user, I want to be able to view quickly who the current members of the cabinet are.
+
+Acceptance Criteria:
+* The user should be able to quickly find who the current cabinet members are with just a few clicks.
+
+Implementation:
+* The website home page will convey to the user what the purpose of the site is with a clear nav bar which allows for easy navigation acorss the websites pages.
+
+User Story:
+
+> As a user, I want to be able to view the cabinet members details, see a photo of them and know what positions they hold and also what constituency they represent.
+
+Acceptance Criteria:
+* The user should be able to easily view the various different cabinet members and their positions within the government as well as the constituency they represent within just a few clicks and scrolling. 
+
+Implementation:
+* This will be achieved by the data displayed on the cabinet page.
+
+User Story:
+
+> As a user, I want to be able to create an account so that I can help keep the database up to date, should there be any future changes to the cabinet.
+
+Acceptance Criteria:
+* Account creation and login is a feature and when a user is logged in, only then can they make changes to the database.
+
+Implementation:
+* It should be possible for a user to create an account which have some form of password controls like minimum lengths. Upon creating an account or logging in, the website should uncover additional functions to allow for CRUD functionality.
+
+User Story:
+
+> As a user I want to be able to use this site with my keyboard
+
+Acceptance Criteria:
+* It should be entirely possible for an individual utilising a keyboard only to be able to click navigate the site.
+
+Implementation:
+* The user will be able to navigate the site using only a keyboard. All buttons and images can be selected utilising both mouse clicks and "keydown" enter.
+
+User Story:
+
+> As a user I want to be able to use a screen reader to help use this site.
+
+Acceptance Criteria:
+* It should be entirely possible for an individual utilising a screen reader to easily utilise the site.
+
+Implementation:
+* The user will be able to navigate the site utilising a screen reader. 
