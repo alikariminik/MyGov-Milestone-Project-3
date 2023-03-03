@@ -39,54 +39,40 @@ Features Planned
 
 ### The Structure Plane
 User Story:
-
-> As a user, I want to be able to view quickly who the current members of the cabinet are.
+> As a user, I want to be able to view who the current members of the cabinet are.
 
 Acceptance Criteria:
 * The user should be able to quickly find who the current cabinet members are with just a few clicks.
 
 Implementation:
-* The website home page will convey to the user what the purpose of the site is with a clear nav bar which allows for easy navigation acorss the websites pages.
+* The website will contain a navbar on every page and for all screen-sizes allowing for navigation to the Cabinet page and other pages of the site.
 
 User Story:
-
 > As a user, I want to be able to view the cabinet members details, see a photo of them and know what positions they hold and also what constituency they represent.
 
 Acceptance Criteria:
-* The user should be able to easily view the various different cabinet members and their positions within the government as well as the constituency they represent within just a few clicks and scrolling. 
+* Information on the Cabinet Members should be presented in a clear and legible way and localised to one area of the page
 
 Implementation:
-* This will be achieved by the data displayed on the cabinet page.
+* A profile card containing the cabinet member's name, image, position and constituency. 
 
 User Story:
-
 > As a user, I want to be able to create an account so that I can help keep the database up to date, should there be any future changes to the cabinet.
 
 Acceptance Criteria:
-* Account creation and login is a feature and when a user is logged in, only then can they make changes to the database.
+* Users should have the ability to create accounts and when logged in be able to make  make changes to the database.
 
 Implementation:
 * It should be possible for a user to create an account which have some form of password controls like minimum lengths. Upon creating an account or logging in, the website should uncover additional functions to allow for CRUD functionality.
 
 User Story:
-
-> As a user I want to be able to use this site with my keyboard
+> As a user, I want to be able to use this site with only my keyboard
 
 Acceptance Criteria:
-* It should be entirely possible for an individual utilising a keyboard only to be able to click navigate the site.
+* It should be entirely possible for an individual utilising only a keyboard to be able to experience the full features of the site and navigate around with ease.
 
 Implementation:
 * The user will be able to navigate the site using only a keyboard. All buttons and images can be selected utilising both mouse clicks and "keydown" enter.
-
-User Story:
-
-> As a user I want to be able to use a screen reader to help use this site.
-
-Acceptance Criteria:
-* It should be entirely possible for an individual utilising a screen reader to easily utilise the site.
-
-Implementation:
-* The user will be able to navigate the site utilising a screen reader. 
 
 ### The Skeleton Plane
 #### Wireframes
@@ -165,3 +151,16 @@ Further to this, I would have liked to expand the Cabinet_member.html page to ob
     - The Flask framework was used to build this application and allowed for seamless templating and navigation across the apps various pages.
 -   [MongoDB:](https://www.mongodb.com/)
     - The Non-Relational Database was hosted on MongoDB and its data is obtained through the use of PyMongo.
+
+## Data Schema
+  ### Users
+  - username: String
+  - password: String
+
+  ### Cabinet 
+  - first_name: String
+  - last_name: String
+  - role: String
+  - constituency: String
+  - profile_pic: String
+  - no : Integer
