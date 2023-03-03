@@ -173,6 +173,7 @@ body {
    height: 60% !important;
 }
 
+
 /* Cabinet Member Profile Page (API) */
 .mycard {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -220,7 +221,7 @@ body {
    list-style-type: square;
 }
 
-/* Login Page & Sign Up Pages*/
+/******* Login Page & Sign Up Pages **********/
 
 #loginbg {
    background-image: url("../images/bhop.jpg");
@@ -288,9 +289,76 @@ body {
    padding: 20px 0 20px 0;
 }
 
- /* Flash Messages */
+/****** Flash Messages *******/
 
- #flashx:hover, #flashx:focus{
+#flashx:hover,
+#flashx:focus {
    color: #C8102E;
    transform: scale(1.05);
- }
+}
+
+/************ Media Queries *************/
+@media only screen and (min-width: 800px) {
+   .hero-image-outer {
+      height: 450px;
+      width: 100%;
+   }
+}
+
+@media only screen and (min-width: 960px) {
+   .hero-image-outer {
+      height: 500px;
+      width: 100%;
+   }
+}
+
+@media only screen and (min-width: 1100px) {
+   .hero-image-outer {
+      height: 600px;
+      width: 100%;
+   }
+
+   .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/heroimage.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+}
+
+@media only screen and (min-width: 1500px) {
+   .hero-image-outer {
+      height: 600px;
+      width: 100%;
+   }
+
+   .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/heroimage.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 815px) {
+   #adjust {
+      width: 100% !important;
+   }
+}
+
+@media only screen and (min-width: 816px) and (max-width: 1240px) {
+   #adjust {
+      width: 50% !important;
+      height: 100%;
+   }
+}
+
+@media only screen and (min-width: 1540px) {
+   #adjust {
+      width: 25% !important;
+   }
+}
