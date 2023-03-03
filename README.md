@@ -87,3 +87,21 @@ Acceptance Criteria:
 
 Implementation:
 * The user will be able to navigate the site utilising a screen reader. 
+
+### The Skeleton Plane
+#### Wireframes
+I utilised Balsamiq to produce my wireframes of how the app would appear across different devices.
+
+Mobile Device Wireframes 
+ 
+ ![Mobile Device Home](static/wireframes/wireframe-desktop-home.png)
+ ![Mobile Device Cabinet](static/wireframes/wireframe-desktop-cabinet.png)
+
+Tablet Device Wireframes
+
+ ![Tablet Device Home](static/wireframes/wireframe-desktop-home.png)
+ ![Tablet Device Cabinet](static/wireframes/wireframe-desktop-cabinet.png)
+
+Desktop Device Wireframes
+ ![Desktop Device Home](static/wireframes/wireframe-desktop-home.png)
+ ![Desktop Device Cabinet](static/wireframes/wireframe-desktop-cabinet.png)
