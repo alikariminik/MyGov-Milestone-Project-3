@@ -88,7 +88,12 @@ body {
    transform: scale(1.05);
 }
 
- /* Cabinet Member Profile Text Content */
+.profile-box {
+   width: 100%;
+   height: 700px;
+}
+
+/* Cabinet Member Profile Text Content */
 
 .cab-role{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -113,19 +118,15 @@ body {
     text-align: center;
  }
 
- .flex-box-buttons{
-   display: flex;
-   justify-content:flex-end
-}
 
-/* Font Awesome Icons */
+ /* Font Awesome Edit & Delete Icons */
 
-.edit-icon{
+ .edit-icon{
    background-color: #062469;
    color: whitesmoke;
 }
 
-.edit-icon:hover{
+.edit-icon:hover, .edit-icon:focus{
    background-color: whitesmoke;
    color: #062469;
 }
@@ -135,9 +136,14 @@ body {
    color: whitesmoke;
 }
 
-.delete-icon:hover{
+.delete-icon:hover, .delete-icon:focus{
    background-color: whitesmoke;
    color: #C8102E;
+}
+
+.flex-box-buttons{
+  display: flex;
+  justify-content: center;
 }
 
  /* Add & Edit Mode */
@@ -161,3 +167,50 @@ body {
    max-height: 73% !important;
    height: 60% !important;
  }
+
+/* Cabinet Member Profile Page (API) */
+  .mycard{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   max-width: 700px;
+   margin: auto;
+   background-color: rgb(200, 16, 46, 0.2);
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+ }
+
+ #cab-photo-outer{
+   height: 240px;
+   width: 100%;
+   justify-content: center;
+   display: flex;
+ }
+
+
+#cab-photo-outer > img{
+   border-radius: 50%;
+   border-style:groove;
+   border-color: #C8102E;
+   height: 240px;
+   width: 240px;
+   align-items: center;
+   display: flex;
+}
+
+#synopsis > h5{
+   font-weight: 500;
+   padding-top: 5px;
+}
+
+#synopsis > a {
+   color: rgb(11, 11, 165);
+}
+
+#votes > h5{
+   font-weight: 500;
+   padding-top: 5px;
+}
+
+#votes > li{
+   list-style-type:square;
+}
