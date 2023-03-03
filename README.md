@@ -182,3 +182,11 @@ Further to this, I would have liked to expand the Cabinet_member.html page to ob
 * Python
     *   [Python Validator] Pycodestyle in GitPod 
         * No issues issues in python files.
+
+### Responsiveness
+
+Vigorous testing was conducted throughout the development process to ensure that the site maintained responsiveness as more elements were added on. Using developer tools and adjusting screen dimensions, I have checked to ensure that all content displays clearly over a variety of screen sizes - primarily on the Mobile, Tablet and Monitors. As mentioned above, media queries were added to correct responsiveness failings from Materialize. 
+
+
+### Known Bugs
+- No known bugs at this time.
